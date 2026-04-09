@@ -107,8 +107,8 @@
     feedbackBox.innerHTML = `
       <div class="fbTitle">${answerState.correct ? "正解！" : "不正解"}</div>
       <div class="fbAnswer">正解：${item.meaning}</div>
-      <div class="fbExample"><strong>例文：</strong>${item.sentence ?? ""}</div>
-      <div class="fbTranslation"><strong>和訳：</strong>${item.translation ?? ""}</div>
+      <div class="fbExample"><strong>例文：</strong>${item.sentence || ""}</div>
+      <div class="fbTranslation"><strong>和訳：</strong>${item.translation || ""}</div>
     `;
   }
 

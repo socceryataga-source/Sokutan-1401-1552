@@ -4,26 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  body{display:none;}
-  html.auth-ok body, html.auth-denied body{display:block;}
+body{display:none;}
+html.auth-ok body, html.auth-denied body{display:block;}
 </style>
 <script>
-(function(){
+(function () {
   const password = prompt("クラスコードを入力してください");
-  if(password === "hokuto2026"){
-    window.__authOK = true;
-    document.documentElement.classList.add("auth-ok");
-  }else{
-    window.__authOK = false;
-    document.documentElement.classList.add("auth-denied");
-    document.addEventListener("DOMContentLoaded", function(){
+  window.__authOK = password === "hokuto2026";
+  document.documentElement.classList.add(window.__authOK ? "auth-ok" : "auth-denied");
+  if (!window.__authOK) {
+    document.addEventListener("DOMContentLoaded", function () {
       document.body.innerHTML = '<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:sans-serif;font-size:1.4rem;padding:2rem;text-align:center;">アクセスできません</div>';
     });
   }
 })();
 </script>
 <title>頻出語句クイズ（No.1401-1552）</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./styles.css?v=3">
 </head>
 <body>
 <div class="page">
@@ -32,10 +29,12 @@
       <p class="eyebrow">Vocabulary Quiz</p>
       <h1>頻出語句クイズ（No.1401-1552）</h1>
       <p class="lead">B列通し番号1401–1552の範囲から出題します。</p>
+
       <div class="grid">
         <label><span>開始番号</span><input type="number" id="startInput" min="1401" max="1552" value="1401"></label>
         <label><span>終了番号</span><input type="number" id="endInput" min="1401" max="1552" value="1552"></label>
       </div>
+
       <div class="modeWrap">
         <span class="modeLabel">出題順</span>
         <div class="toggleRow">
@@ -43,7 +42,8 @@
           <button type="button" class="modeBtn" data-mode="random">ランダム</button>
         </div>
       </div>
-      <button class="primaryBtn" id="startBtn">スタート</button>
+
+      <button class="primaryBtn" id="startBtn" type="button">スタート</button>
     </div>
   </section>
 
@@ -53,16 +53,20 @@
         <div id="progressText">1 / 152</div>
         <div id="scoreText">Score: 0</div>
       </div>
+
       <div class="wordRow">
         <h2 id="wordText">word</h2>
         <button class="iconBtn" id="speakBtn" type="button" aria-label="発音を再生">🔊</button>
       </div>
+
       <div id="choices" class="choices"></div>
       <div id="feedback" class="feedback hidden"></div>
+
       <div class="navRow">
         <button type="button" class="subBtn" id="prevBtn">前へ</button>
         <button type="button" class="subBtn" id="nextBtn">次へ</button>
       </div>
+
       <div class="menuRow">
         <button type="button" class="ghostBtn" id="restartBtn">同条件でリスタート</button>
         <button type="button" class="ghostBtn" id="retryRangeBtn">別範囲でやり直し</button>
@@ -89,7 +93,8 @@
     市販教材を参考にしていますが、例文・表現は独自に作成しています。
   </footer>
 </div>
-<script src="data.js"></script>
-<script src="script.js"></script>
+
+<script src="./data.js?v=3"></script>
+<script src="./script.js?v=3"></script>
 </body>
 </html>
