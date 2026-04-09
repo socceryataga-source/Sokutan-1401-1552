@@ -1,9 +1,9 @@
 (() => {
   if (!window.__authOK) return;
 
-  const dataSource = Array.isArray(window.quizData)
-    ? window.quizData
-    : (typeof quizData !== "undefined" ? quizData : null);
+  const dataSource =
+    Array.isArray(window.quizData) ? window.quizData :
+    (typeof quizData !== "undefined" && Array.isArray(quizData) ? quizData : null);
 
   if (!Array.isArray(dataSource)) {
     console.error("quizData not found");
