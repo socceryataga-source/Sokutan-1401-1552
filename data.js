@@ -802,8 +802,8 @@ window.quizData = [
       "キリスト教徒",
       "空想的な"
     ],
-    "sentence": "Romantic love is a common theme in literature.",
-    "translation": "恋愛は文学においてよくあるテーマだ。"
+    "sentence": "His ideas for the project are very romantic, but not practical.",
+    "translation": "彼のプロジェクトに関するアイデアは非常に空想的だが、現実的ではない。"
   },
   {
     "no": 1463,
@@ -1055,10 +1055,10 @@ window.quizData = [
   {
     "no": 1482,
     "word": "board",
-    "meaning": "板",
+    "meaning": "〜に搭乗する",
     "choices": [
       "伝送する",
-      "板",
+      "〜に搭乗する",
       "こする",
       "下線を引く"
     ],
@@ -1244,8 +1244,8 @@ window.quizData = [
       "剥ぎ取る",
       "活用する"
     ],
-    "sentence": "He peered at my screen.",
-    "translation": "彼は私のスクリーンをのぞき込んだ。"
+    "sentence": "She collaborates with her peers on the project.",
+    "translation": "彼女は同僚たちと協力してプロジェクトを進めた。"
   },
   {
     "no": 1497,
@@ -1257,8 +1257,8 @@ window.quizData = [
       "代理人",
       "授業料"
     ],
-    "sentence": "This organization provides tuition for junior high school students.",
-    "translation": "多くの大学生が中学生に指導を提供する。"
+    "sentence": "The tuition for this semester is quite expensive.",
+    "translation": "今学期の授業料はかなり高い。"
   },
   {
     "no": 1498,
@@ -1439,8 +1439,8 @@ window.quizData = [
       "労働力",
       "計算"
     ],
-    "sentence": "I want to join the faculty of science and engineering at university.",
-    "translation": "大学の理工学部に入りたい。"
+    "sentence": "As we get older, our mental faculties may start to decline.",
+    "translation": "年をとるにつれて、知的機能が衰え始めることがある。"
   },
   {
     "no": 1512,
@@ -1543,8 +1543,8 @@ window.quizData = [
       "割引",
       "避難所"
     ],
-    "sentence": "I spilled red wine on the carpet and stained it.",
-    "translation": "カーペットに赤ワインをこぼして汚してしまった。"
+    "sentence": "I got a coffee stain on my white shirt.",
+    "translation": "白いシャツにコーヒーの染みをつけてしまった。"
   },
   {
     "no": 1520,
@@ -1757,12 +1757,12 @@ window.quizData = [
   {
     "no": 1536,
     "word": "flat",
-    "meaning": "平らな",
+    "meaning": "アパート",
     "choices": [
       "堅固な",
       "劇的な",
       "経済的な",
-      "平らな"
+      "アパート"
     ],
     "sentence": "He lives in a flat in London.",
     "translation": "彼はロンドンのアパートに住んでいる。"
@@ -1777,8 +1777,8 @@ window.quizData = [
       "暴く",
       "資格がある"
     ],
-    "sentence": "She really spoils her child and it will cause problems later.",
-    "translation": "彼女は本当に子供を甘やかしており，のちに問題になるだろう。"
+    "sentence": "Don't spoil the surprise by telling him now.",
+    "translation": "今彼に話して、サプライズを台無しにしないでね。"
   },
   {
     "no": 1538,
@@ -1809,11 +1809,11 @@ window.quizData = [
   {
     "no": 1540,
     "word": "recruit",
-    "meaning": "新入社員",
+    "meaning": "〜を新規採用する",
     "choices": [
       "意図する",
       "思いつく",
-      "新入社員",
+      "〜を新規採用する",
       "代用する"
     ],
     "sentence": "The company plans to recruit about 10 extra engineers this year.",
